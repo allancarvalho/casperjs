@@ -1,0 +1,105 @@
+	<!doctype html>
+	<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&amp;subset=latin,latin-ext">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<img src="img/phantomjs-logo.png" height="149" width="149">
+					<h1>PhantomJS</h1>
+					<p class="fragment">
+						O Phantom JS tecnicamente é o que é chamado de "headless browser", ou seja, um navegador que não renderiza as páginas, ele só roda o código que está contido nelas.</p>
+					</section>
+					<section>
+						<h1>CasperJS <img class="logo-casper" src="img/casperjs-logo.png" height="220"></h1>
+						
+						<p class="fragment">é uma ferramenta que cria scripts de navegação e testes com o PhantomJS </p>
+					</section>
+
+					<section>
+						<h2>Exemplos</h2>
+<ul>
+<li class="fragment">Preencher formulário, enviar por ajax, aguardar e conferir a resposta</li>
+<li class="fragment">Preencher formulário, enviar por ajax, aguardar e conferir a resposta</li>
+<li class="fragment">Preencher formulário, enviar por ajax, aguardar e conferir a resposta</li>
+<li class="fragment">Preencher formulário, enviar por ajax, aguardar e conferir a resposta</li>
+<li class="fragment">Preencher formulário, enviar por ajax, aguardar e conferir a resposta</li>
+<li class="fragment">CSS também quebra teste</li>
+<li class="fragment">Contruindo uma API</li>
+</ul>
+</section>
+<section>
+	
+</section>
+
+	</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: '100%',
+				height: '100%',
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					]
+				});
+
+	</script>
+
+</body>
+</html>
